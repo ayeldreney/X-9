@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strength Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Strength Calculator</h1>
+        <label for="bw">Body Weight (kg):</label>
+        <input type="number" id="bw" placeholder="Enter your body weight" required>
+
+        <div class="exercise-input">
+            <label for="exercise">Select Exercise:</label>
+            <select id="exercise">
+                <option value="deadlift">Deadlift</option>
+                <option value="latPulldown">Wide Grip Lat Pulldown</option>
+                <option value="seatedRow">Seated Cable Row (Wide Grip)</option>
+                <option value="iliacPulldown">Iliac Lat Pulldown (Unilateral)</option>
+                <option value="benchPress">Bench Press (Barbell)</option>
+                <option value="inclinePress">Incline Dumbbell Press</option>
+                <option value="chestFly">Chest Fly Machine</option>
+                <option value="preacherCurl">Dumbbell Preacher Curls</option>
+                <option value="bayesianCurl">Bayesian Curls (behind the back)</option>
+                <option value="tricepPushdown">Tricep Bar 1-Handed Pushdown</option>
+                <option value="overheadExtension">Overhead Extension (1-handed)</option>
+                <option value="reverseCurl">Reverse Dumbbell Curl</option>
+                <option value="lateralRaise">Cable Lateral Raises</option>
+                <option value="rearDeltFly">Rear Delt Fly (with cable)</option>
+                <option value="legExtension">Leg Extension</option>
+                <option value="squat">Squat</option>
+                <option value="legCurl">Seated Leg Curls</option>
+                <option value="rdl">Romanian Deadlifts (RDLs)</option>
+                <option value="calfRaise">Smith Machine Calf Raise on a Step</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <label for="weight">Weight Lifted (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight lifted" required>
+
+        <label for="reps">Reps:</label>
+        <input type="number" id="reps" placeholder="Enter reps performed" required>
+
+        <button id="calculate">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
